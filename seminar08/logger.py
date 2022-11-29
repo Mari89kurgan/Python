@@ -8,7 +8,7 @@ action_dict = {1: 'Поиск контакта',
 
 
 def logger(action):
-    with open('log.txt', 'a', encoding='utf-8') as file:
+    with open('log.txt', 'w', encoding='utf-8') as file:
         file.write('{curr_time}\t{action}\n'.format(
             curr_time=datetime.now(),
             action=action_dict.get(action),
